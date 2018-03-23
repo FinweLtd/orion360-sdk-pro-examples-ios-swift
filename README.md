@@ -81,4 +81,4 @@ Full API documentation is also included in the release package.
 
 ## Feedback & Support
 
-Feedback & support should be directed via email to  [support@finwe.fi](mailto:support@finwe.fi).
+Feedback & support should be directed via email to  [support@finwe.fi](mailto:support@finwe.fi). 
