@@ -46,31 +46,31 @@ Full API documentation is also included in the release package.
 
     cd <drag and drop your project folder>
 4. Create Podfile using **"pod init"** command.
-```
-pod init
-```
+   ```
+   pod init
+   ```
 5. Open created Podfile in edit mode.
-```
-open -e Podfile 
-```
+   ```
+   open -e Podfile 
+   ```
 6. Edit the Podfile content as follows to Install Orion360 SDK Pro for iOS:
 
-```
-source 'https://github.com/FinweLtd/orion360-sdk-pro-ios-specs.git'
-target 'OrionPro_VideoPlayer' do
+   ```
+   source 'https://github.com/FinweLtd/orion360-sdk-pro-ios-specs.git'
+   target 'OrionPro_VideoPlayer' do
 
-# Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+     use_frameworks!
 
-  # Pods for OrionPro_VideoPlayer
-  pod 'orion360-sdk-pro-ios'
+     # Pods for OrionPro_VideoPlayer
+     pod 'orion360-sdk-pro-ios'
 
-end
-```
+   end
+   ```
 7. After saving the updates you made on Podfile, go to terminal and type **"pod install"** and press Return key (↵) .
-```
-pod install
-```
+   ```
+   pod install
+   ```
 8.  Open xcworkspace file that was created while the pods were installed (open Finder application and double click the file). Note: For the above examples, bridging header and license file per example project is created and included.
     
 9.  Build the example application.
