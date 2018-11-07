@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		596463850893A28CB5AFA871 /* Pods_Examples___Orion360_SDK_Pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD6BE35CF6E91DD22191421 /* Pods_Examples___Orion360_SDK_Pro.framework */; };
+		9F749236205A85F20082307F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F749235205A85F20082307F /* AppDelegate.swift */; };
+		9F749238205A85F20082307F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F749237205A85F20082307F /* ViewController.swift */; };
+		9F74923B205A85F20082307F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F749239205A85F20082307F /* Main.storyboard */; };
+		9F74923D205A85F20082307F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F74923C205A85F20082307F /* Assets.xcassets */; };
+		9F749240205A85F20082307F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F74923E205A85F20082307F /* LaunchScreen.storyboard */; };
+		9F74924A205A9E220082307F /* OrionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F749249205A9E220082307F /* OrionViewController.swift */; };
+		9F74924C205AA2F60082307F /* Orion360_SDK_Pro_iOS_Trial_fi.finwe.Examples---Orion360-SDK-Pro.lic in Resources */ = {isa = PBXBuildFile; fileRef = 9F74924B205AA2F60082307F /* Orion360_SDK_Pro_iOS_Trial_fi.finwe.Examples---Orion360-SDK-Pro.lic */; };
+		9F74924F205AA3160082307F /* Orion360-SDK-Pro.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F74924E205AA3160082307F /* Orion360-SDK-Pro.m */; };
+		9FCA8197208DEB21006F364E /* App_SFX_MouseOver-3-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FCA8196208DEB21006F364E /* App_SFX_MouseOver-3-2.wav */; };
+		9FCA8199208DF686006F364E /* McViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA8198208DF686006F364E /* McViewport.swift */; };
+		9FCA81C22091AA92006F364E /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA81C12091AA92006F364E /* CircleProgressView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F749232205A85F20082307F /* Examples - Orion360 SDK Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Examples - Orion360 SDK Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F749235205A85F20082307F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F749237205A85F20082307F /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		9F74923A205A85F20082307F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F74923C205A85F20082307F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F74923F205A85F20082307F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F749241205A85F20082307F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F749249205A9E220082307F /* OrionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrionViewController.swift; sourceTree = "<group>"; };
+		9F74924B205AA2F60082307F /* Orion360_SDK_Pro_iOS_Trial_fi.finwe.Examples---Orion360-SDK-Pro.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Orion360_SDK_Pro_iOS_Trial_fi.finwe.Examples---Orion360-SDK-Pro.lic"; sourceTree = "<group>"; };
+		9F74924D205AA3150082307F /* Examples - Orion360 SDK Pro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Examples - Orion360 SDK Pro-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F74924E205AA3160082307F /* Orion360-SDK-Pro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Orion360-SDK-Pro.m"; sourceTree = "<group>"; };
+		9FCA8196208DEB21006F364E /* App_SFX_MouseOver-3-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "App_SFX_MouseOver-3-2.wav"; sourceTree = "<group>"; };
+		9FCA8198208DF686006F364E /* McViewport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = McViewport.swift; sourceTree = "<group>"; };
+		9FCA81C12091AA92006F364E /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+		C6726AA998B0D9A143D22F02 /* Pods-Examples - Orion360 SDK Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examples - Orion360 SDK Pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Examples - Orion360 SDK Pro/Pods-Examples - Orion360 SDK Pro.debug.xcconfig"; sourceTree = "<group>"; };
+		CF859E4BC4921392F815AB6B /* Pods-Examples - Orion360 SDK Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examples - Orion360 SDK Pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Examples - Orion360 SDK Pro/Pods-Examples - Orion360 SDK Pro.release.xcconfig"; sourceTree = "<group>"; };
+		DCD6BE35CF6E91DD22191421 /* Pods_Examples___Orion360_SDK_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Examples___Orion360_SDK_Pro.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F74922F205A85F20082307F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				596463850893A28CB5AFA871 /* Pods_Examples___Orion360_SDK_Pro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DC635685061540074A1C8DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6BE35CF6E91DD22191421 /* Pods_Examples___Orion360_SDK_Pro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99BD0E5487E7535462C6058C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6726AA998B0D9A143D22F02 /* Pods-Examples - Orion360 SDK Pro.debug.xcconfig */,
+				CF859E4BC4921392F815AB6B /* Pods-Examples - Orion360 SDK Pro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F749229205A85F10082307F = {
+			isa = PBXGroup;
+			children = (
+				9F749234205A85F20082307F /* Examples - Orion360 SDK Pro */,
+				9F749233205A85F20082307F /* Products */,
+				99BD0E5487E7535462C6058C /* Pods */,
+				6DC635685061540074A1C8DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F749233205A85F20082307F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F749232205A85F20082307F /* Examples - Orion360 SDK Pro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F749234205A85F20082307F /* Examples - Orion360 SDK Pro */ = {
+			isa = PBXGroup;
+			children = (
+				9FCA8196208DEB21006F364E /* App_SFX_MouseOver-3-2.wav */,
+				9F74924B205AA2F60082307F /* Orion360_SDK_Pro_iOS_Trial_fi.finwe.Examples---Orion360-SDK-Pro.lic */,
+				9F749235205A85F20082307F /* AppDelegate.swift */,
+				9F749237205A85F20082307F /* ViewController.swift */,
+				9F749249205A9E220082307F /* OrionViewController.swift */,
+				9FCA81C12091AA92006F364E /* CircleProgressView.swift */,
+				9FCA8198208DF686006F364E /* McViewport.swift */,
+				9F749239205A85F20082307F /* Main.storyboard */,
+				9F74923C205A85F20082307F /* Assets.xcassets */,
+				9F74923E205A85F20082307F /* LaunchScreen.storyboard */,
+				9F749241205A85F20082307F /* Info.plist */,
+				9F74924E205AA3160082307F /* Orion360-SDK-Pro.m */,
+				9F74924D205AA3150082307F /* Examples - Orion360 SDK Pro-Bridging-Header.h */,
+			);
+			path = "Examples - Orion360 SDK Pro";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F749231205A85F20082307F /* Examples - Orion360 SDK Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F749244205A85F20082307F /* Build configuration list for PBXNativeTarget "Examples - Orion360 SDK Pro" */;
+			buildPhases = (
+				15FA15580A621CDAB797DFFC /* [CP] Check Pods Manifest.lock */,
+				9F74922E205A85F20082307F /* Sources */,
+				9F74922F205A85F20082307F /* Frameworks */,
+				9F749230205A85F20082307F /* Resources */,
+				4E3A64009A2B77E995EA7D7A /* [CP] Embed Pods Frameworks */,
+				CD9795CDCA02ED43ECE0B5CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Examples - Orion360 SDK Pro";
+			productName = "Examples - Orion360 SDK Pro";
+			productReference = 9F749232205A85F20082307F /* Examples - Orion360 SDK Pro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F74922A205A85F10082307F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Finwe Ltd.";
+				TargetAttributes = {
+					9F749231205A85F20082307F = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9F74922D205A85F10082307F /* Build configuration list for PBXProject "Examples - Orion360 SDK Pro" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F749229205A85F10082307F;
+			productRefGroup = 9F749233205A85F20082307F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F749231205A85F20082307F /* Examples - Orion360 SDK Pro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F749230205A85F20082307F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCA8197208DEB21006F364E /* App_SFX_MouseOver-3-2.wav in Resources */,
+				9F749240205A85F20082307F /* LaunchScreen.storyboard in Resources */,
+				9F74924C205AA2F60082307F /* Orion360_SDK_Pro_iOS_Trial_fi.finwe.Examples---Orion360-SDK-Pro.lic in Resources */,
+				9F74923D205A85F20082307F /* Assets.xcassets in Resources */,
+				9F74923B205A85F20082307F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15FA15580A621CDAB797DFFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Examples - Orion360 SDK Pro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E3A64009A2B77E995EA7D7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Examples - Orion360 SDK Pro/Pods-Examples - Orion360 SDK Pro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD9795CDCA02ED43ECE0B5CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Examples - Orion360 SDK Pro/Pods-Examples - Orion360 SDK Pro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F74922E205A85F20082307F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F749238205A85F20082307F /* ViewController.swift in Sources */,
+				9F749236205A85F20082307F /* AppDelegate.swift in Sources */,
+				9FCA8199208DF686006F364E /* McViewport.swift in Sources */,
+				9F74924F205AA3160082307F /* Orion360-SDK-Pro.m in Sources */,
+				9F74924A205A9E220082307F /* OrionViewController.swift in Sources */,
+				9FCA81C22091AA92006F364E /* CircleProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F749239205A85F20082307F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F74923A205A85F20082307F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F74923E205A85F20082307F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F74923F205A85F20082307F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F749242205A85F20082307F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F749243205A85F20082307F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F749245205A85F20082307F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6726AA998B0D9A143D22F02 /* Pods-Examples - Orion360 SDK Pro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AF2QG5R62;
+				INFOPLIST_FILE = "Examples - Orion360 SDK Pro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.finwe.Examples---Orion360-SDK-Pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Examples - Orion360 SDK Pro/Examples - Orion360 SDK Pro-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F749246205A85F20082307F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF859E4BC4921392F815AB6B /* Pods-Examples - Orion360 SDK Pro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AF2QG5R62;
+				INFOPLIST_FILE = "Examples - Orion360 SDK Pro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.finwe.Examples---Orion360-SDK-Pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Examples - Orion360 SDK Pro/Examples - Orion360 SDK Pro-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F74922D205A85F10082307F /* Build configuration list for PBXProject "Examples - Orion360 SDK Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F749242205A85F20082307F /* Debug */,
+				9F749243205A85F20082307F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F749244205A85F20082307F /* Build configuration list for PBXNativeTarget "Examples - Orion360 SDK Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F749245205A85F20082307F /* Debug */,
+				9F749246205A85F20082307F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F74922A205A85F10082307F /* Project object */;
+}

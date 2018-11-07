@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CsC-aQ-wLn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5wI-7e-K68">
+            <objects>
+                <viewController id="dKz-Ns-uWn" customClass="ViewController" customModule="Examples___Orion360_SDK_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Prj-qf-DLb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scrolling speed: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Von-zL-InV">
+                                <rect key="frame" x="16" y="85" width="133" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" minimumValueImage="minus" maximumValueImage="plus" translatesAutoresizingMaskIntoConstraints="NO" id="pYS-vF-qsg">
+                                <rect key="frame" x="209" y="80" width="142" height="31"/>
+                                <connections>
+                                    <action selector="sliderValue:" destination="dKz-Ns-uWn" eventType="valueChanged" id="Q29-Ns-5ER"/>
+                                </connections>
+                            </slider>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sYs-LH-VF9">
+                                <rect key="frame" x="0.0" y="118" width="375" height="549"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="basicCell" rowHeight="16" id="4DH-UY-aVR">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4DH-UY-aVR" id="oBZ-hr-teW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="15.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sYs-LH-VF9" firstAttribute="leading" secondItem="Flg-sV-ALx" secondAttribute="leading" id="289-eB-oPv"/>
+                            <constraint firstItem="Von-zL-InV" firstAttribute="leading" secondItem="Flg-sV-ALx" secondAttribute="leading" constant="16" id="2XQ-8v-Bu5"/>
+                            <constraint firstItem="Flg-sV-ALx" firstAttribute="trailing" secondItem="pYS-vF-qsg" secondAttribute="trailing" constant="26" id="7tr-tO-YBp"/>
+                            <constraint firstItem="pYS-vF-qsg" firstAttribute="leading" secondItem="Von-zL-InV" secondAttribute="trailing" constant="62" id="Bax-Xr-lbl"/>
+                            <constraint firstItem="sYs-LH-VF9" firstAttribute="top" secondItem="pYS-vF-qsg" secondAttribute="bottom" constant="8" id="YLw-T8-x2w"/>
+                            <constraint firstItem="sYs-LH-VF9" firstAttribute="top" secondItem="Von-zL-InV" secondAttribute="bottom" constant="12" id="gqT-zZ-DY6"/>
+                            <constraint firstItem="sYs-LH-VF9" firstAttribute="bottom" secondItem="Flg-sV-ALx" secondAttribute="bottom" id="inN-rH-e9x"/>
+                            <constraint firstItem="pYS-vF-qsg" firstAttribute="top" secondItem="Flg-sV-ALx" secondAttribute="top" constant="16" id="lid-vk-KI1"/>
+                            <constraint firstItem="Von-zL-InV" firstAttribute="top" secondItem="Flg-sV-ALx" secondAttribute="top" constant="21" id="qyQ-W9-0lH"/>
+                            <constraint firstItem="sYs-LH-VF9" firstAttribute="top" secondItem="pYS-vF-qsg" secondAttribute="bottom" constant="8" id="sve-iA-IFG"/>
+                            <constraint firstItem="pYS-vF-qsg" firstAttribute="leading" secondItem="Von-zL-InV" secondAttribute="trailing" constant="62" id="uZK-X6-HmR"/>
+                            <constraint firstItem="sYs-LH-VF9" firstAttribute="trailing" secondItem="Flg-sV-ALx" secondAttribute="trailing" id="yyf-Y9-cM0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Flg-sV-ALx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="93B-Io-aX3"/>
+                    <connections>
+                        <outlet property="orionSlider" destination="pYS-vF-qsg" id="oJA-nx-Ymh"/>
+                        <outlet property="tableView" destination="sYs-LH-VF9" id="brs-ey-1qw"/>
+                        <segue destination="q1q-Dn-ufc" kind="show" identifier="showDetails" id="xDR-2w-v8M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edE-r0-DU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-471.19999999999999" y="303.59820089955025"/>
+        </scene>
+        <!--Use the slider to adjust brightness.-->
+        <scene sceneID="OVH-4O-zk4">
+            <objects>
+                <viewController title="Use the slider to adjust brightness." id="q1q-Dn-ufc" customClass="OrionViewController" customModule="Examples___Orion360_SDK_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ap-EB-xZd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aCL-j3-PtS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6k-sE-l7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448.80000000000001" y="303.59820089955025"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="njN-rq-UEC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CsC-aQ-wLn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ex7-Rc-e9d">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dKz-Ns-uWn" kind="relationship" relationship="rootViewController" id="MAo-O1-BFy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rj9-0Y-mgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1324" y="305"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minus" width="25" height="8"/>
+        <image name="plus" width="25" height="26"/>
+    </resources>
+</document>

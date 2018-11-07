@@ -1,0 +1,16 @@
+# This file contains the list of applications
+# for which this Orion360 license is valid
+# Please do not modify this file in any way
+packagename=fi.finwe.Examples---Orion360-SDK-Pro
+logo=finwe
+platform = ios
+enableFeatureExplicit=tags,screenshots,viewport_split
+platform=ios
+version=2.*
+========== BEGIN-SIGNATURE-V1 ==========
+eE6UPJvzds+VjZj8DUHrme6E5c5/9Sv3Q5cHE7n6YlakDvKZVrsLrlYQtj0Y5j1uYWF13QCLw9wN
+Zfr1TUmnD44oqboZ3joZ6ze8Kk4cHSd7NRU6UJ/4uSmn8GKPAdHSulEI0ZcPYE5v1FF4wWjhLJEp
+RiE7iTUf9gaTNR18JZ1dkSAQ5oVjATt60tFxWvXkytpN3IBNZrwjsQv6iKZM4GXfZkMXXkgrVaGN
+mpkVHbto1d7AFJrjaL6uN30/mIzhqNJI1r0e562BVTnH687VWTlv+XcsMVMAtU80dT9Yn3Yz4VRs
++9App9Tg6DbGFuWG4CvvR+sCxNh6RxaovYHeRw==
+=========== END-SIGNATURE-V1 ===========
