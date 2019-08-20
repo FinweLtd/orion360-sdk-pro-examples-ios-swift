@@ -12,18 +12,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
       
     var selectedSpeedValue: Float = 1.0
     @IBOutlet weak var orionSlider: UISlider!
+    @IBOutlet weak var lblScrollingSpeed: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
     
 
     
-    let listOfFeatures = ["Preview Image","Minimal video player", "Minimal video downloaded player", "Advanced video player", "Animation: Cross Fade", "VR mode: 2D", "VR mode: 2D Portrait", "Projection: Little Planet", "Projection: Source Projection", "Hotspot"]
+    let listOfFeatures = ["Preview Image","Minimal video player", "Minimal video downloaded player", "Advanced video player", "Animation: Cross Fade", "VR mode: 2D", "VR mode: 2D Portrait", "Projection: Little Planet", "Projection: Source Projection", "Hotspot", "Heat map(log currentTime, pitch,yaw & roll)"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavBarImage()
         tableView.delegate = self
         tableView.dataSource = self
+        orionSlider.isHidden = true
+        lblScrollingSpeed.isHidden = true
+        
         
     }
     

@@ -1,0 +1,12 @@
+PODS:
+  - orion360-sdk-pro-ios (2.2.47)
+
+DEPENDENCIES:
+  - orion360-sdk-pro-ios
+
+SPEC CHECKSUMS:
+  orion360-sdk-pro-ios: a4f9fe75c13846046229f2dd06b142606482e7fc
+
+PODFILE CHECKSUM: 91e1993e2a1da2851f0aebb74c38ac93120500d0
+
+COCOAPODS: 1.4.0

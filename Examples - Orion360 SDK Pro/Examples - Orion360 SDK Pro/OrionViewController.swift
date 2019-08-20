@@ -169,6 +169,8 @@ class OrionViewController: UIViewController, OrionViewDelegate, OrionVideoConten
                 case "Hotspot":
                     //Hotspot
                     hotSpot()
+                case "Heat map(log currentTime, pitch,yaw & roll)":
+                   logCurrentRotation()
                 default:
                     print("Some other feature")
             }
@@ -212,6 +214,10 @@ class OrionViewController: UIViewController, OrionViewDelegate, OrionVideoConten
                 updateTimeLabel(Int(currentTime))
             }
         }
+        if(selectedFeature == "Heat map(log currentTime, pitch,yaw & roll)")
+        {
+            print("Current time:\(currentTime), Pitch: \(viewPort.presentationConfig.currentRotation.pitch), Yaw: \(viewPort.presentationConfig.currentRotation.yaw) Roll: \(viewPort.presentationConfig.currentRotation.roll)")
+        }
 
     }
 
@@ -235,6 +241,16 @@ class OrionViewController: UIViewController, OrionViewDelegate, OrionVideoConten
     }
     
     /**
+     * Log currentTime, Pitch, Yaw and roll
+     */
+    
+    func logCurrentRotation() {
+        videoContent.play()
+       orionVideoContentDidUpdateProgress(videoContent, currentTime: videoContent.currentTime, availableTime: videoContent.availableTime, totalDuration: videoContent.totalDuration)
+        
+    }
+
+    /**
      * Preview Image from asset
      */
     func previewImage()
@@ -242,7 +258,7 @@ class OrionViewController: UIViewController, OrionViewDelegate, OrionVideoConten
         print("Preview Image from asset")
 
         orionView.orionContentArray.removeAllObjects()
-        let imageName = "Orion360_test_image.jpg"
+        let imageName = "olos.jpg"
         let image = UIImage(named: imageName)
         let stereo: OrionStereoScopic = OrionStereoScopic(STEREOSCOPIC_NONE)
         let photoContent = OrionContent()

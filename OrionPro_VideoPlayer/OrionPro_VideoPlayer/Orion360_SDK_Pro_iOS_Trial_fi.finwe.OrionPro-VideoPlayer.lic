@@ -1,0 +1,16 @@
+# This file contains the list of applications
+# for which this Orion360 license is valid
+# Please do not modify this file in any way
+packagename=fi.finwe.OrionPro-VideoPlayer
+logo=finwe
+platform = ios
+enableFeatureExplicit=tags,screenshots,viewport_split
+platform=ios
+version=2.*
+========== BEGIN-SIGNATURE-V1 ==========
+gk0lQrzsHM4yWPbB6oRiQ6OQyHH4lywx413HOsnKjj9m010OIhkd63vx4YLRPSMfNZDcs3LKBVvV
+mAE+96WvE06bxF61Zd3rzqpVaxr6kEfVMRY7sHs9BkDVNN48frKt8QAM1vXVI4Z/3MneqwYjiN5x
+Rg8apfSiQJfyylhzWhuwhxJ/4Q5rUTE8UMdmkRSHhEav/WfRz+e3dreRJqXYV4F4EC3Kx14dTIZ0
++rv5SPbe8pZY2OL5si5gLAFSB5gOpSbG4ZSSAuek4sfASB8b31G6BKgt8gEUvO8xo8wMGoBzdvYp
+O80WKYH7sjzLKiK2u/zm1dr9J3RJR8cNLWIUYQ==
+=========== END-SIGNATURE-V1 ===========
