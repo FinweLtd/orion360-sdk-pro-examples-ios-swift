@@ -462,18 +462,24 @@ class OrionViewController: UIViewController, OrionViewDelegate, OrionVideoConten
         viewPort.presentationConfig.currentFov = 140.0 * 3.14 / 180.0
         viewPort.viewportConfig.vrControlsInitializationDistance = 30.0
         
+        let selectionContent = OrionContent()
+        selectionContent.imageArray = [UIImage(named: "selectionCircle1")!]
+        orionView.add(selectionContent)
+        orionViewPortItem.orionSelectionContent = selectionContent;
+        orionViewPortItem.visibleInModes = UInt(OrionViewportItemVisibleVRMode2D) | UInt(OrionViewportItemVisibleVRMode2DPortrait)
+        
         orionViewPortItem.pulsingSpeed = 7
         orionViewPortItem.alpha = 1.0
         orionViewPortItem.visible = true
         orionViewPortItem.scale = 1.0
         orionViewPortItem.rotation = OrionViewRotation()
-        orionViewPortItem.rotation.pitch = 20 //Rotation around x-axis in degrees (0-360)
+        orionViewPortItem.rotation.pitch = -20 //Rotation around x-axis in degrees (0-360)
         orionViewPortItem.rotation.yaw = 200 //Rotation around Y-axis in degrees (0-360)
         orionViewPortItem.rotation.roll = -10 // Rotation around z-axis in degrees (0-360)
         orionViewPortItem.bgScaleFactor = 1.4
         orionViewPortItem.actionIndex = 100
         orionViewPortItem.orionContent = startContent
-        orionViewPortItem.selectionInFrames = 0
+        orionViewPortItem.selectionInFrames = 160
         orionViewPortItem.selectionZoomScale = 1.5
         orionView.add(orionViewPortItem)
         orionView.attachOrionViewportItemtoViewport(orionViewPortItem, orionViewport: viewPort)
@@ -481,7 +487,6 @@ class OrionViewController: UIViewController, OrionViewDelegate, OrionVideoConten
         viewPort.viewportConfig.fullScreenEnabled = true
         viewPort.viewportConfig.vrMode = OrionVrMode(VR_MODE_2D)
         viewPort.viewportConfig.vrModeControls = true
-
     }
     
    
@@ -520,59 +525,62 @@ class OrionViewController: UIViewController, OrionViewDelegate, OrionVideoConten
     }
     
     //Test showHide finders
-    func showHideViewFinders(_ hide: Bool) {
-        
-        if (hide)
-        {
-            
-        }
+    func showViewFinders() {
         print("Show finder")
-        let lineWidht: CGFloat = 2.5
-        let lineColor: UIColor = UIColor.black
+        
         let image = UIImage(named: "viewFinder")
         
         let h: CGFloat? = image?.size.height
         let w: CGFloat? = image?.size.width
         let newW: CGFloat = 45
         let newH: CGFloat = newW / (w ?? 0.0) * (h ?? 0.0)
-        if !(leftCursor != nil) {
+        
+        if leftCursor == nil {
             leftCursor = UIImageView(image: image)
             leftCursor.frame = CGRect(x: 0, y: 0, width: newW, height: newH)
-            if viewPort.viewportConfig.vrMode == VR_MODE_2D {
-                leftCursor.center = CGPoint(x: view.frame.size.width / 4, y: view.frame.size.height / 2)
-            } else {
-                leftCursor.center = CGPoint(x: view.frame.size.width / 2, y: view.frame.size.height / 2)
-            }
-            leftCursor.alpha = 0.0
+            leftCursor.center = CGPoint(x:  orionView.bounds.size.width / 4, y: orionView.center.y)
             view.addSubview(leftCursor)
-
         }
-        if ((rightCursor != nil) && viewPort.viewportConfig.vrMode == VR_MODE_2D)
+        if rightCursor == nil
         {
             rightCursor = UIImageView(image: image)
             rightCursor.frame = CGRect(x: 0, y: 0, width: newW, height: newH)
-            rightCursor.center = CGPoint(x: view.frame.size.width / 4, y: view.frame.size.height / 2)
-            rightCursor.alpha = 0.0
-            
-            rightCursor.alpha = 0.0
+            rightCursor.center = CGPoint(x:  orionView.bounds.size.width / 4 * 3, y: orionView.center.y)
             view.addSubview(rightCursor)
-
         }
-
+        
+        leftCursor.alpha = 1.0
+        rightCursor.alpha = 1.0
+    }
+    
+    func hideViewFinders() {
+        leftCursor.alpha = 0.0
+        rightCursor.alpha = 0.0
     }
     
     func orionViewportDidChangeVrControlState(_ view: OrionView!, actionIndex: UInt, viewport: OrionViewport!, state: UInt) {
+        if(view.orionViewportItemArray.count == 0)
+         {
+             return;
+         }
+        
+        print(state)
+        
         switch (state){
-        //case VR_CONTROL_STATE_INITIALIZED:
+        case UInt(VR_CONTROL_STATE_OFF):
+            print ("VR_CONTROL_STATE_OFF, \(actionIndex)")
+            hideViewFinders()
         case UInt(VR_CONTROL_STATE_INITIALIZED):
             print ("VR_CONTROL_STATE_INITIALIZED, \(actionIndex)")
-            showHideViewFinders (false)
+            showViewFinders()
         case UInt(VR_CONTROL_STATE_VIEWPORTITEM_SELECTING):
             print ("VR_CONTROL_STATE_VIEWPORTITEM_SELECTING , \(actionIndex)")
-            selectedVrAction = Int(actionIndex)
-            showHideViewFinders (true)
-
-            
+        case UInt(VR_CONTROL_STATE_VIEWPORTITEM_UNSELECTING):
+            print ("VR_CONTROL_STATE_VIEWPORTITEM_UNSELECTING , \(actionIndex)")
+        case UInt(VR_CONTROL_STATE_SELECTED):
+            print ("VR_CONTROL_STATE_SELECTED , \(actionIndex)")
+            videoContent.isPaused() ? videoContent.play() : videoContent.pause()
+            hideViewFinders()
         default:
             print("something else")
         }
@@ -650,7 +658,7 @@ class OrionViewController: UIViewController, OrionViewDelegate, OrionVideoConten
     /**
      *  Function called when Play/Pause button is selected.
      */
-    @objc func playPause(_ button: UIButton)
+    @objc func playPause(_ button: UIButton?)
     {
         
         if (videoContent.isPaused())

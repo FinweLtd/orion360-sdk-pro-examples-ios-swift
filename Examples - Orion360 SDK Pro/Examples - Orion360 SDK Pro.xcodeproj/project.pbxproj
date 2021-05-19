@@ -38,7 +38,7 @@
 		9FCA81C12091AA92006F364E /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		C6726AA998B0D9A143D22F02 /* Pods-Examples - Orion360 SDK Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examples - Orion360 SDK Pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Examples - Orion360 SDK Pro/Pods-Examples - Orion360 SDK Pro.debug.xcconfig"; sourceTree = "<group>"; };
 		CF859E4BC4921392F815AB6B /* Pods-Examples - Orion360 SDK Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examples - Orion360 SDK Pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Examples - Orion360 SDK Pro/Pods-Examples - Orion360 SDK Pro.release.xcconfig"; sourceTree = "<group>"; };
-		DCD6BE35CF6E91DD22191421 /* Pods_Examples___Orion360_SDK_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Examples___Orion360_SDK_Pro.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD6BE35CF6E91DD22191421 /* Pods_Examples___Orion360_SDK_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Examples___Orion360_SDK_Pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +119,6 @@
 				9F74922E205A85F20082307F /* Sources */,
 				9F74922F205A85F20082307F /* Frameworks */,
 				9F749230205A85F20082307F /* Resources */,
-				4E3A64009A2B77E995EA7D7A /* [CP] Embed Pods Frameworks */,
-				CD9795CDCA02ED43ECE0B5CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,36 +196,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4E3A64009A2B77E995EA7D7A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Examples - Orion360 SDK Pro/Pods-Examples - Orion360 SDK Pro-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD9795CDCA02ED43ECE0B5CF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Examples - Orion360 SDK Pro/Pods-Examples - Orion360 SDK Pro-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

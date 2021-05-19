@@ -4,9 +4,13 @@ PODS:
 DEPENDENCIES:
   - orion360-sdk-pro-ios
 
+SPEC REPOS:
+  https://github.com/FinweLtd/orion360-sdk-pro-ios-specs.git:
+    - orion360-sdk-pro-ios
+
 SPEC CHECKSUMS:
   orion360-sdk-pro-ios: a4f9fe75c13846046229f2dd06b142606482e7fc
 
 PODFILE CHECKSUM: d156b77163b0eeeeae93e18a1fa53cd4bea411d2
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.10.1
