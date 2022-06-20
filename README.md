@@ -14,8 +14,6 @@ Orion360™ SDK Pro is a binary delivery of the Orion360 Engine for iOS and tvOS
     
 -   AR Mode,
     
--   Positional Audio,
-    
 -   Live / Adaptive HLS Streaming ,
     
 -  Click [here](http://orion360.finwe.mobi/sdk/) to read more about our SDKs
